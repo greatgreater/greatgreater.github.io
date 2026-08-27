@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KANYE WEST — SUBJECT FILE</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="crop tl"></div>
+<div class="crop tr"></div>
+<div class="crop bl"></div>
+<div class="crop br"></div>
+
+<button id="themeToggle" class="theme-toggle" aria-label="Toggle light and dark mode">
+  <span class="toggle-label">MODE</span>
+  <span id="toggleState">CONCRETE</span>
+</button>
+
+<audio id="audioEl" src="media/song.mp3" preload="auto" loop></audio>
+
+<header class="hero">
+  <div class="hero-frame">
+    <div class="hero-meta">
+      <span>FILE NO. 001</span>
+      <span>STATUS: ACTIVE</span>
+      <span>ORIGIN: CHICAGO, IL</span>
+    </div>
+    <button id="audioToggle" class="hero-play-btn" aria-label="Play background track">
+      <span class="hero-play-icon">
+        <span class="icon-play"></span>
+        <span class="icon-pause"></span>
+      </span>
+      <span class="hero-play-label" id="heroPlayLabel">PLAY TRACK 001</span>
+    </button>
+    <h1 class="hero-name">KANYE<br>WEST</h1>
+    <p class="hero-tag">PRODUCER — RAPPER — DESIGNER</p>
+  </div>
+  <div class="hero-photo">
+    <img src="media/hero-photo.jpg" alt="Kanye West" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+    <div class="photo-fallback">
+      <span>IMG</span>
+      <span>NOT FOUND</span>
+      <span class="small">replace photo.jpg</span>
+    </div>
+    <span class="photo-caption">SPECIMEN — FRONT VIEW</span>
+  </div>
+</header>
+
+<main>
+
+  <section class="section bio-section">
+    <div class="section-head">
+      <span class="section-num">A</span>
+      <h2>BIO</h2>
+    </div>
+    <p class="bio-text">
+      Kanye West emerged from Chicago's South Side in the early 2000s as a producer,
+      building a catalog of soul-sampled beats before stepping to the mic himself.
+      As a rapper he pushed hip-hop into new territory album after album, restlessly
+      changing sound rather than repeating a formula. As a designer he moved into
+      footwear and apparel, building a fashion operation that ran in parallel to the
+      music, treating the runway with the same experimental instinct as the studio.
+    </p>
+  </section>
+
+  <section class="section facts-section">
+    <div class="section-head">
+      <span class="section-num">B</span>
+      <h2>FIELD NOTES</h2>
+    </div>
+    <div class="facts-grid" id="factsGrid"></div>
+  </section>
+
+  <section class="section timeline-section">
+    <div class="section-head">
+      <span class="section-num">C</span>
+      <h2>MANIFEST — TIMELINE</h2>
+    </div>
+    <div class="timeline" id="timeline"></div>
+  </section>
+
+  <section class="section generator-section">
+    <div class="section-head">
+      <span class="section-num">D</span>
+      <h2>RANDOM DISPATCH</h2>
+    </div>
+    <p class="generator-intro">Pull a random field note from the archive.</p>
+    <div class="dispatch-frame">
+      <p id="dispatchText" class="dispatch-text">PRESS TO PULL A RECORD FROM THE ARCHIVE.</p>
+      <button id="dispatchBtn" class="dispatch-btn">PULL RECORD →</button>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <span>FAN ARCHIVE — UNOFFICIAL — COMPILED FOR REFERENCE ONLY</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

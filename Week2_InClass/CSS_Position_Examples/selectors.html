@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+
+    <style>
+        /* Step 1: All <h1> tags under/below <div>
+            Descendant Selector
+         */
+        div h1 {
+            color: blue;
+            font-style: italic;
+        }
+        
+        /* Step 2: All <h1> tags directly under <div>
+            Child Selector */
+        div > h1 {
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to my homepage</h1>
+
+    <div>
+        I am the first div.
+
+        <h1>
+            I am the first div's heading 1.
+        </h1>
+
+        <section>
+            <h1>I am section's heading 1.</h1>
+        </section>
+
+    </div>
+    
+</body>
+</html>

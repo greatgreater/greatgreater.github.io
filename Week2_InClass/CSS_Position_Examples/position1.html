@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+
+    <style>
+
+        div {
+            margin-top: 30px;
+        }
+
+        .static {
+            position: static;
+            border: 2px solid blue;
+        }
+
+        .relative {
+            position: relative;
+            right: 40px;
+            border: 2px solid green;
+        }
+
+        .fixed {
+            position: fixed;
+            bottom: 20px;
+            right: 10px;
+            width: 300px;
+            border: 2px solid red;
+        }
+
+        /* absolute div's parent */
+        #parent {
+            position: relative;
+            width: 500px;
+            height: 400px;
+            border: 3px dotted black;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 50px;
+            right: 30px;
+            width: 300px;
+            height: 300px;
+            border: 3px solid purple;
+        }
+        
+    </style>
+
+</head>
+<body>
+
+
+    <div class="static">
+        Hello. I am an element with position: static.
+        <p>
+            An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page
+        </p>
+        Some more text goes here.
+    </div>
+
+
+     <div class="relative">
+        Hello. I am an element with position: relative.
+        <p>
+            An element with position: relative; is positioned relative to its normal position.
+        </p>
+        Some more text goes here.
+    </div>
+
+
+    <div class="fixed">
+        Hello. I am an element with position: fixed.
+        <p>
+            An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+
+            A fixed element does not leave a gap in the page where it would normally have been located.
+
+            Notice the fixed element in the lower-right corner of the page.
+        </p>
+        Some more text goes here.
+    </div>
+    
+
+
+    <div id="parent"><!-- Parent -->
+        <div class="absolute"> <!-- Child -->
+            Hello. I am an element with position: absolute. My parent's an element with position: relative.
+            <p>
+                An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+    
+                However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+    
+                <strong>Note:</strong> Absolute positioned elements are removed from the normal flow, and can overlap elements.
+            </p>
+            Some more text goes here.
+        </div>
+    </div>
+
+
+
+</body>
+</html>

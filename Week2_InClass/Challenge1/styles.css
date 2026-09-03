@@ -1,0 +1,105 @@
+/* styles.css - Challenge #1 (Skeleton) */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightcyan;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.site-header {
+    text-align: center;
+}
+
+.site-header h1 {
+    color: red;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.tagline {
+    font-style: italic;
+}
+
+
+.hero {
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+}
+
+#mascot-image {
+    height: 250px;
+}
+
+.about {
+    line-height: 1.6
+}
+
+button.buy-tickets {
+    background-color: rgba(21, 221, 54, 0.959);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 20px 4px rgba(0, 0, 255, 0.5);    padding: 10px; 
+    height: 40px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.buy-tickets:hover {
+    background-color: rgba(5, 97, 20, 0.959);
+    cursor: pointer;
+    transform: translateY(-1px);
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+@media (max-width: 380px) {
+    .actions {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+button.make-donation {
+    background-color: darkblue;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 20px 4px rgba(255, 0, 0, 0.5);
+    height: 40px;
+    margin: 5px;
+    padding: 10px;
+}
+
+button.make-donation:hover {
+    background-color: black;
+    cursor: pointer;
+    transform: translateY(-1px);    
+}
+
+.site-footer {
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid grey;
+    padding-top: 10px;
+}
